@@ -25,6 +25,8 @@ gem "populator"
 gem "will_paginate", "~> 3.0.6"
 gem "will_paginate-bootstrap"
 
+gem "newrelic_rpm"
+
 group :development, :test do
   gem "pry-rails"
   gem "awesome_print"
