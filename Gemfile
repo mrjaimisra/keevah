@@ -22,6 +22,8 @@ gem "responders"
 gem "traceroute"
 gem "rails_12factor", group: :production
 gem "populator"
+gem "will_paginate", "~> 3.0.6"
+gem "will_paginate-bootstrap"
 
 group :development, :test do
   gem "pry-rails"

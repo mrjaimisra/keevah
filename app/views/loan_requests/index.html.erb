@@ -21,3 +21,7 @@
 <br>
 
 <%= render "shared/lender_thumbnail" %>
+
+<div class="container">
+  <%= will_paginate @collection, renderer: BootstrapPagination::Rails %>
+</div>
