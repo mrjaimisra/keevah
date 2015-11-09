@@ -17,7 +17,7 @@ module LoadScript
       Capybara.register_driver :poltergeist do |app|
         Capybara::Poltergeist::Driver.new(app, options)
       end
-      @host = host || "http://localhost:3000"
+      @host = host || "https://vast-mesa-5666.herokuapp.com"
     end
 
     def logger

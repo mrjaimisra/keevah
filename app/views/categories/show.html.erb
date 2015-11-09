@@ -9,9 +9,9 @@
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Categories
           <span class="caret"></span></button>
         <ul class="dropdown-menu">
-            <% Category.all.each do |category| %>
-              <li class=""><%= link_to category.title, category_path(category), class: "list-group-item" %></li>
-            <% end %>
+          <% Category.all.each do |category| %>
+            <li class=""><%= link_to category.title, category_path(category), class: "list-group-item" %></li>
+          <% end %>
         </ul>
       </div>
     </div>
@@ -25,6 +25,9 @@
 
 <%= render "shared/lender_thumbnail" %>
 
-<div class="container">
-  <%= will_paginate @loan_requests, renderer: BootstrapPagination::Rails %>
-</div>
+<% cache @loan_requests do %>
+  <div class="container">
+    <%= will_paginate @loan_requests, renderer: BootstrapPagination::Rails %>
+  </div>
+<% end %>
+
