@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :loan_requests
 
+  resources :categories, only: [:index, :show]
+
   get "/cart", to: "cart#index"
   post "/cart", to: "cart#create"
   delete "/cart", to: "cart#delete"

@@ -25,8 +25,11 @@ gem "populator"
 gem "will_paginate", "~> 3.0.6"
 gem "will_paginate-bootstrap"
 
+gem "redis-rails"
 gem "newrelic_rpm"
 gem "skylight"
+
+gem 'selenium-webdriver'
 
 group :development, :test do
   gem "pry-rails"
