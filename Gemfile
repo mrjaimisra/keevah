@@ -26,6 +26,7 @@ gem "will_paginate", "~> 3.0.6"
 gem "will_paginate-bootstrap"
 
 gem "newrelic_rpm"
+gem "skylight"
 
 group :development, :test do
   gem "pry-rails"
@@ -36,6 +37,7 @@ group :development, :test do
   gem "launchy"
   gem "database_cleaner"
   gem "poltergeist"
+  gem "quiet_assets"
 end
 
 group :development do
